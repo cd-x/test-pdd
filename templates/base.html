@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Plant Doctor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body class style="margin:10px;padding:10px">
+    <div class="page-header" id="banner">
+      <div class="row">
+        <div class="col-lg-8 col-md-7 col-sm-6">
+          <h3>Plant Disease Detector</h3>
+          <p class="lead">Upload an image with <b> LEAF </b>  is located on it</p>
+        </div>
+      </div>
+    </div>
+      <div class="row container-fluid text-center">
+      <form action="" method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=Upload>
+    </form>
+    </div>
+    <p style="margin-bottom:1cm;"></p>
+    <div class="row">
+        <div class="col-lg-4">
+          <div class="page-header">
+            <h3 id="tables">Result</h3>
+          </div>
+          <div class="bs-component">
+            <table class="table table-hover">
+                <tr class="table-active">
+                  <th scope="col">Image</th>
+                  <th scope="col">Predict</th>
+                </tr>
+                <tr>
+                    <td scope="row"> 
+                      <img width="224" height="224" src="{{imagesource}}"> 
+                    </td>
+                    <td> {{label}} </td>
+                  </tr>
+            </table> 
+        </div>
+      </div>
+    </div>
+<footer class="container-fluid text-center">
+ <div class="btn-group">
+   <a href="https://www.linkedin.com/in/rajrishi-vishwakarma-42294613a"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+ </div>
+ <div class="btn-group"></div>
+ <div class="btn-group">
+   <a href="https://github.com/cd-x"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+ </div>
+</footer>
+
+</body>
+</html>
